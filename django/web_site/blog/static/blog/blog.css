@@ -1,0 +1,119 @@
+ul.blog-types {
+        list-style-type: none;
+}
+ul.dates {
+    list-style-type: none!important;
+}
+.blog h4{
+        margin-top: 0;
+}
+.blog:not(:last-child){     
+        border-bottom: 1px solid #ccc;
+}
+.blog {
+        margin-bottom: 1em;
+        padding:1em;
+}
+.blog-info {
+        list-style-type: none;
+        margin-bottom: 1em;
+}
+.blog-info li{
+        display: inline-block;
+        margin-right: 2em;
+}
+
+
+
+.blog-article-info {
+        margin-top: 2em;
+        list-style-type: none;
+        margin-bottom: 2em;
+}
+.blog-article-info li{
+        display: inline-block;
+        margin-right: 2em;
+}
+div.blog-content {
+        line-height: 200%;
+        margin-bottom: 1em;
+}
+
+#button {
+        color: #fff;
+        background-color: #d9534f;
+        float: right;
+        border: 1px solid #d43f3a;
+        border-radius: 4px;
+        font-size: 15px;
+        padding: 2px 8px;
+        text-align:center;
+        font-weight: 300;
+}
+#button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 16px 50px 0 rgba(0,0,0,0.19);
+    background-color: #337ab7;
+    border: 1px solid #2e6da4;
+    color: yellow;
+}
+
+.pre-next-blogs {
+    margin-top: 1em;
+}
+
+.pre-next-blogs-buttom {
+        color: #fff;
+        background-color: #337ab7;
+        border: 1px solid #2e6da4;
+        border-radius: 4px;
+        text-align:center;
+        padding: 2px 8px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+}
+
+div.comment-area {
+        margin-top: 2.5em;
+}
+h4.comment-area-title {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.2em;
+}
+
+div.django-ckeditor-widget {
+        width: 100%;
+        border-radius:25px;
+}
+
+div.comment {
+        border-bottom: 1px dashed #ccc;
+        margin-bottom: 0.3em;
+        padding-bottom: 0.3em;
+}
+div.reply {
+        margin-left: 2em;
+}
+
+div#reply_content_container {
+        border: 1px solid #d1d1d1;
+        border-bottom: none;
+        background-color: #f8f8f8;
+        overflow: hidden;
+        padding: 1em 1em 0.5em;
+}
+p#reply_title {
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 0.3em;
+}
+
+.like {
+    color: #337ab7;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em 0.3em;
+}
+
+.like .active {
+    color:red;
+}

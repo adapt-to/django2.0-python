@@ -1,0 +1,18 @@
+.home h3{
+    color:whitesmoke;
+    font-size: 222%;
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+body {
+    background-image:url(http://pic1.win4000.com/wallpaper/2017-11-17/5a0e768fb8f0a.jpg);
+}
+#container {
+            background: rgb(170,240,0);
+            margin: 0 auto;
+            min-width: 20em;
+            max-width: 40em;
+            height: 20em;
+        }

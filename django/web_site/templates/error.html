@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load staticfiles %}  {# 位置必须在extends后面，加载静态文件#}
+
+{% block title %} 错误 {% endblock %}
+
+{% block index_active %}active{% endblock %}
+
+{% block content %}
+    {{ message }} <br><a href="{{ redirect_to }}">返回</a>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load staticfiles %}  {# 位置必须在extends后面，加载静态文件#}
+
+{% block title %} 首页 {% endblock %}
+
+{% block link %}
+    <link rel = "stylesheet" href="{% static 'index.css' %}"> {#如果上面不load staticfiles 的话这里是找不到css的，虽然在base中已经写了加载了模块#}
+{% endblock %}
+
+{% block index_active %}active{% endblock %}
+
+{% block content %}
+            <div class="home">
+                <h3>
+                    你好！欢迎访问我的个人网站！！
+                </h3>
+                <!-- 图表容器 DOM -->
+                <div id="container"></div>
+                <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+                <script>
+                    // 图表配置
+                    var options = {
+                        chart: {
+                            type: 'line'},
+                        title: { text: null},
+                        xAxis: {categories: {{ read_date|safe }},
+                                tickmarkPlacement: 'on',
+                                title: { text: '近7日阅读统计'},
+                         },
+                        yAxis: {
+                            title: {text: '阅览数'},               // y 轴标题
+                            labels: { enabled: false },
+                            gridLineDashStyle: 'Dash',
+                        },
+                        series: [{                              // 数据列
+                            name: '日期',                        // 数据列名
+                            data: {{read_nums}},                     // 数据
+                        }],
+                        plotOptions: {
+                                        line: {
+                                            dataLabels: {
+                                                enabled: true
+                                            }
+                                        }
+                                     },
+                        legend: { enabled: false },
+                        credits:{
+                                    enabled: false // 禁用版权信息
+                                }
+                    };
+
+                    // 图表初始化函数
+                    var chart = Highcharts.chart('container', options);
+                </script>
+            </div>
+
+{% endblock %}
