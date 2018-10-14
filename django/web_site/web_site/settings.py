@@ -96,8 +96,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'web_site',
-        'USER': 'heyufei',
-        'PASSWORD': 'hyf1994',
+        'USER': 'xxxxx',
+        'PASSWORD': 'xxxxxx',
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -188,9 +188,9 @@ EMAIL_HOST = 'smtp.qq.com'
 # SMTP端口
 EMAIL_PORT = 587
 # 自己的邮箱
-EMAIL_HOST_USER = '493948994@qq.com'
+EMAIL_HOST_USER = 'xxxxxxxx@qq.com'
 # 自己的邮箱授权码，非密码
-EMAIL_HOST_PASSWORD = 'jogfkaaitotdbjhj'
+EMAIL_HOST_PASSWORD = 'xxxxxxxxxxx'
 
 EMAIL_SUBJECT_PREFIX = '[Python博客|通知]'
 # 与SMTP服务器通信时，是否启动TLS链接(安全链接)。默认是false
